@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div:first-of-type {
+    width: 308px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.form div i {
+    width: 100px;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+}
+
+.form div i:first-of-type {
+    border: 2px solid #E0EFFE;
+}
+
+.form h1 {
+    margin-bottom: 50px;
+}
+
+.form span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.form img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/*.form input:focus {*/
+/*    border: 2px solid #E0EFFE;*/
+/*}*/
+
+.form button {
+    width: 247px;
+}
+
+.form .button {
+    margin: 50px 0;
+    width: 85px;
+    height: 75px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.form input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.icon {
+    background-color: #E0EFFE;;
+    padding: 10px 12px;
+    border-radius: 50%;
+}

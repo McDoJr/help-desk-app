@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 50px 20px 190px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .i {
+    width: 650px;
+    height: 160px;
+    background-color: #F5F7F5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px;
+    border-radius: 14px;
+}
+
+.top .i h1 {
+    font-size: 36px;
+}
+
+.top .i h3 {
+    font-size: 24px;
+}
+
+.top .i img {
+    position: absolute;
+    top: -45px;
+    right: 20px;
+    transform: scale(.8);
+}
+
+.top .j {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top .j div {
+    margin-left: 30px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #F5F7F5;
+    border-radius: 14px;
+}
+
+.top .j div h2 {
+    margin-right: 5px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.top .j div span {
+    font-size: 12px;
+}
+
+.middle {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle .left .heading {
+    margin: 20px 0 5px 0;
+    display: flex;
+}
+
+.middle .left .heading span {
+    margin-right: 30px;
+}
+
+.middle .right {
+    width: 50%;
+    object-fit: contain;
+}
+
+.bottom {
+    align-self: end;
+    position: relative;
+    width: 300px;
+}
+
+.bottom img {
+    width: 100%;
+}
+
+.bottom button {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 500;
+}

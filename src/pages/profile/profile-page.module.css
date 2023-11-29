@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 50px 50px 190px;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    height: 80%;
+    width: 25%;
+    padding: 80px 50px;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 2px 2px 1px grey;
+}
+
+.left img {
+    object-fit: contain;
+}
+
+.left h2 {
+    margin: 20px 0 0 0;
+    font-weight: 600;
+}
+
+.left span {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.left p {
+    font-size: 13px;
+}
+
+.right {
+    height: 80%;
+    width: 75%;
+    padding: 80px 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 2px 3px grey;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 55% 40%;
+
+}
+
+.row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px grey;
+    padding: 5px 10px;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.row span {
+    font-size: 12px;
+}
+
+.row img {
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.row button {
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.form {
+    grid-area: 1 / 2 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.form label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+.form input {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ACB8C2;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form input:focus {
+    border: 1px solid #AFBACA;
+}
+
+.form button {
+    margin-top: 15px;
+    padding: 10px;
+}

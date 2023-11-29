@@ -1,0 +1,128 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--primary-color);
+
+    background-image: url("../../assets/portal_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form {
+    width: 540px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.form h2 {
+    margin: 20px 0;
+}
+
+.form .field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form label {
+    color: #5A5A5D;
+    margin: 15px 0 5px 0;
+}
+
+.form input {
+    font-size: 14px;
+    color: #5A5A5D;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #BEBEBF;
+    border-radius: 8px;
+}
+
+.form .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    cursor: pointer;
+}
+
+.form input:focus {
+    border: 2px solid #E0EFFE;
+}
+
+.form button {
+    margin: 25px 0 10px 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #898c8f;
+}
+
+.form a {
+    text-decoration: none;
+    color: #292929;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .error {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: #FFCACA;
+    border-radius: 8px;
+}
+
+.form .warning {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.form .error span {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+.form .error span:last-child {
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}

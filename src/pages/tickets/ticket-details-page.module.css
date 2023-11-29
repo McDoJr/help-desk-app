@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 20px 190px;
+}
+
+.box {
+    height: 80%;
+    width: 90%;
+    padding: 80px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 3px 3px 3px #4285F4;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to bottom, var(--primary-color) .1%, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+}
+
+.card {
+    background: linear-gradient(to bottom, var(--primary-color) .1%, #ffffff, #ffffff);
+    padding: 60px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:first-child {
+    grid-area: 1 / 1 / 3 / 2;
+    background: unset;
+    display: block;
+    padding: 15px;
+}
+
+.card h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4285F4;
+}
+
+.card h1 {
+    font-weight: 500;
+}
+
+.card span {
+    font-size: 13px;
+}
+
+.card p {
+    font-size: 14px;
+}

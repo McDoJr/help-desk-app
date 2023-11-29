@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div:first-of-type {
+    width: 308px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.form div i {
+    width: 100px;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+}
+
+.form div i:last-of-type {
+    border: 2px solid #E0EFFE;
+}
+
+.form h1 {
+    margin-bottom: 50px;
+}
+
+.form span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.form input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 308px;
+    color: #5A5A5D;
+    padding: 10px 10px 10px 50px;
+    outline: none;
+    border: 1px solid #BEBEBF;
+    border-radius: 10px;
+}
+
+.form div:last-of-type {
+    position: relative;
+    margin: 50px 0;
+}
+
+.form img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.form .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    cursor: pointer;
+}
+
+.form input:focus {
+    border: 2px solid #E0EFFE;
+}
+
+.form button {
+    width: 247px;
+}
