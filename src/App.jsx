@@ -35,12 +35,19 @@ const App = () => {
         saveData("profiles", updatedProfiles);
     }
 
+    const handleProfilesChanges = (currentProfile) => {
+        const tempProfiles = [...profiles.filter(({username}) => username !== currentProfile.username), currentProfile];
+        setProfiles([...tempProfiles]);
+        setProfile(currentProfile);
+        saveData("profile", currentProfile);
+        saveData("profiles", tempProfiles);
+    }
+
     const addTicket = (ticket) => {
         ticket.id = 100 + profile.tickets.length + 1;
         const tickets = [...profile.tickets, ticket];
         const updatedProfile = {...profile, ['tickets']: tickets};
-        setProfile(updatedProfile);
-        saveData("profile", updatedProfile);
+        handleProfilesChanges(updatedProfile);
         setTicketForm({id: "", title: "", description: "", date: {day: '', month: '', year: ''}, urgency: "", location: "", requested: "", assigned: "", solved: false});
     }
 
@@ -75,7 +82,7 @@ const App = () => {
                 <Route path="/main" element={<HomePage profile={profile} handleLogout={handleLogout}/>}/>
                 <Route path="/profile" element={<ProfilePage profile={profile} handleLogout={handleLogout}/>}/>
                 <Route path="/ticket/list" element={<TicketListPage profile={profile} handleLogout={handleLogout}/>}/>
-                <Route path="/ticket/details" element={<TicketDetailsPage profile={profile} handleLogout={handleLogout}/>}/>
+                <Route path="/ticket/details" element={<TicketDetailsPage profile={profile} handleLogout={handleLogout} handleProfilesChanges={handleProfilesChanges}/>}/>
                 <Route path="/ticket" element={<TicketPage profile={profile} ticketForm={ticketForm} handleLogout={handleLogout} handleTicketFormChange={handleTicketFormChange}/>}/>
                 <Route path="/ticket/fillup" element={<TicketFillupPage profile={profile} setTicketForm={setTicketForm} ticketForm={ticketForm} handleLogout={handleLogout} handleTicketFormChange={handleTicketFormChange} addTicket={addTicket}/>}/>
                 <Route path="/signup" element={<SignUpPage formData={formData} setFormData={setFormData}/>}/>
